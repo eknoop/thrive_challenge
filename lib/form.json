@@ -1,0 +1,65 @@
+{
+  "questions": [
+    {
+      "key": "roleName",
+      "text": "What is the name of the role?",
+      "required": true,
+      "options": [
+        {
+          "key": "custSuccess",
+          "text": "Customer Success"
+        },
+        {
+          "key": "fullstack",
+          "text": "Fullstack Engineer"
+        },
+        {
+          "key": "productManager",
+          "text": "Product Manager"
+        }
+      ]
+    },
+    {
+      "key": "primaryBusiness",
+      "text": "What is your primary business?",
+      "required": true,
+      "options": [
+        {
+          "key": "accounting",
+          "text": "Accounting"
+        },
+        {
+          "key": "software",
+          "text": "Software development"
+        },
+        {
+          "key": "landscaping",
+          "text": "Landscaping"
+        }
+      ]
+    },
+    {
+      "key": "technicalRequired",
+      "text": "Is a technical background required?",
+      "options": [
+        {
+          "key": "y",
+          "text": "Yes"
+        },
+        {
+          "key": "n",
+          "text": "No"
+        }
+      ],
+      "required": [
+        {
+          "roleName": "fullstack"
+        },
+        {
+          "roleName": "productManager",
+          "primaryBusiness": "software"
+        }
+      ]
+    }
+  ]
+}
